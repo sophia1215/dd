@@ -3,15 +3,20 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title><%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
   <%= csrf_meta_tags %>
 </head>
 <body class="hold-transition skin-purple layout-top-nav">
-	<div class="wrapper">
-		<%= render 'common/header' %>
-		<%= yield %>
-		<%= render 'common/footer' %>
-	</div>
+  <!-- <div class="wrapper"> -->
+    <%= render 'common/header' %>
+  	<%= render 'common/messages' %>
+    <div class="content-wrapper">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render 'common/footer' %>
+  <!-- </div> -->
 </body>
 </html>

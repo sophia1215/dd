@@ -1,0 +1,134 @@
+<% provide(:view_profile, "active") %>
+<% provide(:title, "檢視個人基本資料")%>
+
+<% content_for(:sidebar) do %>
+  <%= render "common/sidebar" %>
+<% end %>
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    Profile
+    <small>檢視個人基本資料</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li class="active">View</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">個人基本資料</h3>
+        </div>
+        <div class="box-body">
+          <strong><i class="fa fa-user"></i> 姓名</strong>
+          <p class="text-muted"><%= @user.name %></p>
+          <hr>
+          <strong><i class="fa fa-venus-mars"></i> 性別</strong>
+          <p class="text-muted"><%= @user.gender %></p>
+          <hr>
+          <strong><i class="fa fa-envelope"></i> email</strong>
+          <p><%= @user.email %></p>
+        </div>
+      </div>
+      <!-- <div class="box box-primary"> -->
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">關於我111</h3>
+        </div>
+        <div class="box-body">
+          <strong><i class="fa fa-birthday-cake"></i> 生日</strong>
+          <p class="text-muted">2016-05-20</p>
+          <hr>
+          <strong><i class="fa fa-book margin-r-5"></i> 身高</strong>
+          <p class="text-muted">
+            163
+          </p>
+          <hr>
+          <strong><i class="fa fa-map-marker margin-r-5"></i> 體重</strong>
+          <p class="text-muted">45</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">聯絡方式</h3>
+        </div>
+        <div class="box-body">
+          <strong><i class="fa fa-mobile"></i> 聯絡電話</strong>
+          <p class="text-muted">0912345678</p>
+          <hr>
+          <strong><i class="fa fa-map-marker margin-r-5"></i> 地址</strong>
+          <p class="text-muted">新竹市幸福路100號</p>
+        </div>
+      </div>
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">學歷 & 職業</h3>
+        </div>
+        <div class="box-body">
+          <strong><i class="fa fa-book margin-r-5"></i> 最高學歷</strong>
+          <p class="text-muted">
+            美國麻省理工學院
+          </p>
+          <hr>
+          <strong><i class="fa fa-map-marker margin-r-5"></i> 職業</strong>
+          <p class="text-muted">軟體工程師</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">關於我333</h3>
+        </div>
+        <div class="box-body">
+          <strong><i class="fa fa-book margin-r-5"></i> 最高學歷</strong>
+          <p class="text-muted">
+            B.S. in Computer Science from the University of Tennessee at Knoxville
+          </p>
+          <hr>
+          <strong><i class="fa fa-file-text-o margin-r-5"></i> Notes</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+        </div>
+      </div>
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">社交</h3>
+        </div>
+        <div class="box-body">
+          <strong><i class="fa fa-facebook-square"></i> Facebook</strong>
+          <p class="text-muted">facebook@facebook.com</p>
+          <hr>
+          <strong>xxx Line</strong>
+          <p class="text-muted">line@line.com</p>
+          <hr>
+          <strong><i class="fa fa-google-plus-square"></i> Google+</strong>
+          <p class="text-muted">google-plus@gmail.com</p>
+          <hr>
+          <strong><i class="fa fa-instagram"></i> Instagram</strong>
+          <p class="text-muted">instagram@instagram.com</p>
+          <hr>
+          <strong><i class="fa fa-pinterest"></i> Pinterest</strong>
+          <p class="text-muted">pinterest@pinterest.com</p>
+          <hr>
+          <strong><i class="fa fa-twitter"></i> Twitter</strong>
+          <p class="text-muted">twitter@twitter.com</p>
+          <hr>
+          <strong><i class="fa fa-github"></i> Github</strong>
+          <p class="text-muted">github@github.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="clearfix"></div>
